@@ -9,6 +9,9 @@
 
 	<modules>
 		<module>pengluo22-mq</module>
+		<module>pengluo22-mq-example</module>
+		<module>pengluo22-mq-example/pengluo22-mq-example-simple</module>
+		<module>pengluo22-mq-example/pengluo22-mq-example-spring-boot</module>
 	</modules>
 	<packaging>pom</packaging>
 	<description>pengluo22消息队列支持聚合项目</description>
