@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>io.pengluo22</groupId>
+	<artifactId>pengluo22-mq-group</artifactId>
+	<name>pengluo22-mq-group</name>
+
+	<modules>
+		<module>pengluo22-mq</module>
+		<module>pengluo22-mq-example</module>
+		<module>pengluo22-mq-example/pengluo22-mq-example-simple</module>
+		<module>pengluo22-mq-example/pengluo22-mq-example-spring-boot</module>
+	</modules>
+	<packaging>pom</packaging>
+	<description>pengluo22消息队列支持聚合项目</description>
+	<version>${reversion}${changelist}</version>
+
+	<properties>
+		<!-- maven repository domain -->
+		<repository.domain>http://kwnexus.kiway.cn</repository.domain>
+		<reversion>0.0.1</reversion>
+    	<changelist>-SNAPSHOT</changelist>
+    	
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>pengluo22-repository</id>
+			<url>${repository.domain}/repository/kwm-maven2</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	
+
+	  
+</project>
